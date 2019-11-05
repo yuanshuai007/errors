@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js面试题</title>
+</head>
+<body>
+
+<script type='module'>
+import {a} from './1.js'
+console.log(a)
+/* 一 前提条件
+*  1.json不能存在循环引用
+*  2.json中不能存在undefined,正则,函数
+*  https://blog.csdn.net/qq_40774743/article/details/89386548
+*  https://www.cnblogs.com/renbo/p/9563050.html
+*/
+//console.log(cloneDeep)
+/*try{
+	obj1={a:1}
+	obj2={b:2}
+	obj1.aa=obj2
+	obj2.bb=obj1
+	json=[obj1,obj2]
+	JSON.stringify(json)
+}catch(e){
+	throw 'JSON不能处理循环引用'
+}
+JSON.stringify({a:undefined}) //{}*/
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+一 产生的原因
+import会发起跨越请求，直接运行html在浏览器中，会报错
+
+二 解决方案
+1.在本地搞个服务器
+2.不要用import，直接<script src='filename.js'></script>
